@@ -8,9 +8,16 @@ public class Main {
         String stringwithoutspaces = string.replace(" ","");
         int counter=0;
 
-        boolean contains = stringwithoutspaces.contains(substring);
-        if (contains==true)
-            counter++;
+
+
+            boolean contain;
+            if ( contain = Boolean.parseBoolean(String.valueOf(stringwithoutspaces.contains(substring)))) {
+                counter++;
+
+                stringwithoutspaces = stringwithoutspaces.replace(substring, "");
+            }
+
+
 
         System.out.println(counter);
     }

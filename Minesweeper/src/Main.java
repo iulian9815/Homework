@@ -22,6 +22,7 @@ public class Main {
         for (int i = 0; i < number+1; i++) {
             int w = random.nextInt(9);
             int q = random.nextInt(9);
+            if (array[q][w]=='.')
             array[q][w] = b;
 
         }
